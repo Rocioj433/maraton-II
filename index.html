@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGHT</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="foco">
+        <img id="cambiarFoco" src="./imagenes/encendido-1.png" alt="">
+    </div>
+    <button class="switch">
+        <img id="cambiarInterruptor" src="./imagenes/on-or.png" alt="">
+    </button>
+    <div class="contenedor-cuadrado">
+        <div class="cuadrado"></div>
+    </div>
+    <div class="boton">
+        <button class="userRandom">boton</button>
+    </div>
+    <div id="juego">
+        <h1>Juega contra la maquina</h1>
+        <div id="piedra" onclick="eleccionUser('0')">Piedra</div>
+        <div id="papel" onclick="eleccionUser('1')">Papel</div>
+        <div id="tijera" onclick="eleccionUser('2')">Tijera</div>
+    </div>
+    <div class="cronometro">
+        <div class="boton start"></div>        
+        <div class="boton parar"></div>
+        <div class="boton reiniciar"></div>
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
